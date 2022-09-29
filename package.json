@@ -1,0 +1,25 @@
+{
+  "name": "@donutteam/mullvad-utilities",
+  "version": "0.0.1",
+  "description": "A collection of utilities for controlling the Mullvad VPN via its CLI.",
+  "main": "./index.js",
+  "scripts": {
+    "lint": "eslint . -c ./.eslintrc.cjs",
+    "lint-fix": "eslint . -c ./.eslintrc.cjs --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donutteam/npm-mullvad-utilities.git"
+  },
+  "keywords": [
+    "mullvad",
+    "vpn"
+  ],
+  "author": "Donut Team",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@donutteam/eslint-config": "^1.0.6",
+    "eslint": "^8.24.0"
+  }
+}
