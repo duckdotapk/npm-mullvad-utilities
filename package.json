@@ -1,15 +1,17 @@
 {
-  "name": "@donutteam/mullvad-utilities",
-  "version": "0.0.1",
+  "name": "@lorenstuff/mullvad-utilities",
+  "version": "1.0.0",
   "description": "A collection of utilities for controlling the Mullvad VPN via its CLI.",
-  "main": "./index.js",
+  "main": "./lib/index.js",
   "scripts": {
+    "build": "npx rimraf lib && npx tsc",
     "lint": "eslint . -c ./.eslintrc.cjs",
-    "lint-fix": "eslint . -c ./.eslintrc.cjs --fix"
+    "lint-fix": "eslint . -c ./.eslintrc.cjs --fix",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/donutteam/npm-mullvad-utilities.git"
+    "url": "https://github.com/lorenstuff/npm-mullvad-utilities.git"
   },
   "keywords": [
     "mullvad",
@@ -19,7 +21,10 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
-    "@donutteam/eslint-config": "^1.0.6",
-    "eslint": "^8.24.0"
+    "@donutteam/eslint-config": "^2.0.0",
+    "@types/node": "^18.11.18",
+    "eslint": "^8.33.0",
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.5"
   }
 }
